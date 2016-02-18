@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="page-top" class="index">
+
+    {% include header.html %}
+
+        {{ content }}
+
+    {% include footer.html %}
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+
+	<!-- number scrrol JavaScript -->
+	<!--<script src="js/jquery-1.10.2.min.js.js"></script>-->
+	<script src="js/custom.js"></script>
+
+	<!-- clintspeech JavaScript -->
+	<script src="js/vendors/slick.min.js"></script>
+	<script src="js/vendors/main.js"></script>
+		
+	<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="js/jquery.sliderTabs.min.js"></script>
+
+	 <script>
+
+	//alert(document.getElementById('page-top').scrollTop);
+	if(document.getElementById('page-top').scrollTop>=400){
+	document.getElementById('head').setAttribute("style","z-index:-99")
+
+	}
+</script>
+  
+    <script>
+    $(document).ready(function(){
+
+      var tabs = $("div#mySliderTabs").sliderTabs({
+        autoplay: 8000,
+		mousewheel: 1,
+        indicators: true,
+        panelArrows: true,
+        panelArrowsShowOnHover: true,
+		
+      });
+    });
+  </script>
+  
+  <script >
+
+ 
+  var hei=document.getElementById('contact-now').clientHeight;
+  
+  if(hei==300){
+ 	document.getElementById('contact-now').setAttribute("style","height:400px");
+  }
+  	
+    </script>
+  
+
+  </body>
+
+</html>
